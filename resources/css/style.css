@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background-color: white;
+    color: #555;
+    font-family: 'Muli', Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/* Reusable Components */
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 70px 0;
+}
+
+/* Headings */
+h1 {
+    color: #fff;
+    font-family: 'Major Mono Display';
+    font-size: 400%;
+    padding-top: 20%;
+    padding-bottom: 5%;
+}
+
+/* HEADER */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/header.jpg);
+    background-size: cover;
+    background-position: center; 
+    height: 100vh;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+header p {
+    font-weight: 200;
+    color: #fff;
+    font-size: 170%;
+    word-spacing: 120%;
+    padding-bottom: 5%;
+}
+
+nav {
+    padding-top: 20px;
+}
+
+.nav li {
+    display: inline-flex;
+    padding: 20px 30px;
+}
+
+.logo {
+    display: none !important;
+    padding: 20px 45px 20px 20px;
+    color: #fff;
+    font-family: 'Major Mono Display';
+    font-size: 150%;
+}
+
+a{ 
+    text-decoration: none;
+    color: #fff;
+}
+  
+.link{
+position: relative;
+}
+
+.link:after{
+content: '';
+position: absolute;
+width: 0; height: 2px;
+display: block;
+margin-top: 5px;
+right: 0;
+background: rgb(7, 231, 138);
+transition: width 1s ease;
+-webkit-transition: width .2s ease;
+}
+   
+.link:hover:after{
+width: 100%;
+left: 0;
+background: rgb(7, 231, 138);
+}
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, color 0.2s, border 0.2s;
+    transition: background-color 0.2s, color 0.5s, border 0.2s;
+    margin-right: 15px;  
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: rgb(2, 192, 113);
+    border: 2px solid rgb(2, 192, 113);
+    color: #fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 2px solid rgb(2, 192, 113);
+    color: rgb(2, 192, 113);
+}
+
+.btn:hover,
+.btn:active{
+    background-color: rgb(2, 128, 75);
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: rgb(2, 128, 75);
+    border: 2px solid rgb(2, 128, 75);
+    color: #fff;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 2px solid rgb(2, 128, 75);
+    color: #fff;
+}
+
